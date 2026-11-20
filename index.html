@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudio</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --accent: #5b5bd6; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141418; --fg: #f2f2f5; --muted: #a1a1aa; --accent: #9c9cf5; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 32px; margin: 0 0 8px; }
+  p.sub { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Estudio</h1>
+  <p class="sub">Aplicación personal de escritorio para organizar archivos propios.</p>
+
+  <p>Estudio es una aplicación privada que funciona únicamente en la computadora de su dueño
+  (dirección local 127.0.0.1). Sirve para catalogar, editar y respaldar los archivos propios del usuario.</p>
+
+  <p>Estudio se conecta a la cuenta de Google del propio usuario solo para:</p>
+  <ul>
+    <li><b>Google Drive</b> (permiso <code>drive.file</code>): guardar copias de respaldo en carpetas que crea la
+    propia aplicación y volver a leerlas. No accede a ningún otro archivo del Drive.</li>
+    <li><b>Google Fotos</b> (selector oficial de Google): importar únicamente las fotos o videos que el usuario
+    elige a mano.</li>
+  </ul>
+
+  <p>No es un servicio público: no tiene cuentas de terceros, no vende ni comparte datos y no envía
+  información a ningún servidor propio.</p>
+
+  <p><a href="privacidad.html">Política de privacidad</a></p>
+
+  <footer>Estudio · uso personal</footer>
+</main>
+</body>
+</html>
